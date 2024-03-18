@@ -1,0 +1,166 @@
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: gray;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-image: url(src/background3.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.header h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.header p {
+    color: #fff ;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.cta-button {
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.nav-link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #555;
+}
+.carousel-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-slide {
+    flex: 0 0 auto; /* Agar lebar slide disesuaikan dengan konten */
+    margin-right: 10px; /* Jarak antar slide */
+}
+
+.carousel-slide:last-child {
+    margin-right: 0; /* Hapus margin-right pada slide terakhir */
+}
+
+.carousel-slide img {
+    width: 400px;
+    max-width: 100%; /* Membuat gambar responsif */
+    height: auto; /* Biarkan tinggi gambar disesuaikan dengan lebar */
+}
+
+/* CSS untuk tombol navigasi carousel */
+button#prevBtn,
+button#nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button#prevBtn {
+    left: 0;
+}
+
+button#nextBtn {
+    right: 0;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.course {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+    .header h1 {
+        font-size: 28px;
+    }
+    .header p {
+        font-size: 16px;
+    }
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+}

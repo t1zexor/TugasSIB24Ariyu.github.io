@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamental JavaScript</title>
+</head>
+<body>
+    <h1>Contoh-contoh Fundamental JavaScript</h1>
+
+    <script>
+        // Contoh 1: Hello, World!
+        console.log("Hello, World!");
+
+        // Contoh 2: Variabel
+        let nama = "John";
+        console.log("Nama: " + nama);
+
+        // Contoh 3: Operasi Aritmatika
+        let angka1 = 10;
+        let angka2 = 5;
+        let hasilTambah = angka1 + angka2;
+        console.log("Hasil Penjumlahan: " + hasilTambah);
+
+        // Contoh 4: Percabangan (if...else)
+        let nilai = 80;
+        if (nilai >= 60) {
+            console.log("Lulus");
+        } else {
+            console.log("Tidak Lulus");
+        }
+
+        // Contoh 5: Perulangan (for loop)
+        for (let i = 1; i <= 5; i++) {
+            console.log("Iterasi ke-" + i);
+        }
+
+        // Contoh 6: Perulangan (while loop)
+        let j = 1;
+        while (j <= 3) {
+            console.log("While loop iterasi ke-" + j);
+            j++;
+        }
+
+        // Contoh 7: Fungsi
+        function tambah(a, b) {
+            return a + b;
+        }
+        console.log("Hasil Penjumlahan: " + tambah(3, 4));
+
+        // Contoh 8: Array
+        let fruits = ["Apple", "Banana", "Orange"];
+        console.log("Buah pertama: " + fruits[0]);
+
+        // Contoh 9: Objek
+        let person = {
+            nama: "John",
+            umur: 30,
+            pekerjaan: "Developer"
+        };
+        console.log("Nama: " + person.nama);
+        console.log("Umur: " + person.umur);
+        console.log("Pekerjaan: " + person.pekerjaan);
+
+        // Contoh 10: Metode String
+        let kata = "Hello, World!";
+        console.log("Panjang string: " + kata.length);
+        console.log("Huruf pertama: " + kata.charAt(0));
+        console.log("Index 'World': " + kata.indexOf("World"));
+        console.log("Substring: " + kata.substring(0, 5));
+
+        // Contoh 11: Metode Array
+        fruits.push("Mango");
+        console.log("Buah setelah ditambah: " + fruits);
+
+        // Contoh 12: Metode Object
+        person.alamat = "Jl. ABC No. 123";
+        console.log("Alamat: " + person.alamat);
+    </script>
+</body>
+</html>
